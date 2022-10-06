@@ -14,7 +14,7 @@ app.get('/:name', (req, res) => {
     const name = req.params.name;
     res.json({
         ok: true,
-        Message: `Hola usuario ${name}`
+        message: `Hola usuario ${name}`
     });
 });
 
