@@ -4,7 +4,10 @@ const app = express();
 const portNumber = process.env.PORT;
 
 app.get('/', (req, res) => {
-    console.log('Hola Mundo!!');
+    res.json({
+        ok: true,
+        message: 'Hola Mundo!!'
+    });
 });
 
 app.get('/:name', (req, res) => {
